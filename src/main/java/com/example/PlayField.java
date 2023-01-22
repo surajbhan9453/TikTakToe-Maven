@@ -18,11 +18,11 @@ package com.example;
  
  public class PlayField extends Application {
  
-     String winner = null;
-     int playFieldSize = 10;
-     Label xpoints, opoints;
-     boolean darkMode;
-     String lightStyle, darkStyle;
+     private String winner = null;
+     private int playFieldSize = 10;
+     private Label xpoints, opoints;
+     private boolean darkMode;
+     private String lightStyle, darkStyle;
      private boolean isX = true;
  
      PlayField(Label xpoints, Label opoints, int size, boolean darkMode, String lightStyle, String darkStyle) {
