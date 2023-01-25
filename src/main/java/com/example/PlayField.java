@@ -76,6 +76,9 @@ package com.example;
              who();
              lockButtons();
          }
+
+         if(checkFull())
+            lockButtons();
      }
  
      // ANCHOR - checkWinnner
@@ -159,6 +162,26 @@ package com.example;
              return true;
          }
          return false;
+     }
+
+     public boolean checkFull() {
+
+        double fullCounter = Math.pow((buttons.length+1), 2.0);
+        for(int j = 0; j< buttons.length;j++){
+            for(int i = 0; i < buttons[j].length;i++){
+                if(buttons[j][i].equals("X") || buttons[j][i].equals("O"))
+                    fullCounter--;
+                else if(buttons[j][i].equals(null)){
+                    fullCounter = Math.pow((buttons.length+1), 2.0);
+                    break;
+                }
+            }
+            if(fullCounter==0){
+                return true;
+            }
+        }
+
+        return false;
      }
  
      private String[][] reverseBoard(String[][] board) {

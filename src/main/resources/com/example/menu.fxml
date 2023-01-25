@@ -3,17 +3,19 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainMenu">
    <children>
-      <Button fx:id="btn3" layoutX="268.0" layoutY="213.0" mnemonicParsing="false" onAction="#pressedPlay" style="-fx-font-size: 20;" text="Play" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="400.0" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+      <Button fx:id="btn3" layoutX="344.0" layoutY="236.0" mnemonicParsing="false" onAction="#pressedPlay" style="-fx-font-size: 20;" text="Play" />
       <Label layoutX="105.0" layoutY="192.0" prefHeight="17.0" prefWidth="138.0" text="0" fx:id="xpoints" />
       <Label fx:id="oPoints" layoutX="105.0" layoutY="155.0" prefHeight="17.0" prefWidth="138.0" text="0" />
       <Label layoutX="38.0" layoutY="192.0" text="X:" />
       <Label layoutX="37.0" layoutY="155.0" text="O:" />
       <Button fx:id="reset" layoutX="49.0" layoutY="222.0" mnemonicParsing="false" onAction="#rpressed" style="-fx-font-size: 12;" text="Reset" />
-      <Label layoutX="173.0" layoutY="58.0" style="-fx-font-size: 50;" text="Tik-Tak-Toe">
+      <Label layoutX="245.0" layoutY="95.0" style="-fx-font-size: 50;" text="Tik-Tak-Toe">
          <font>
             <Font name="Arial Black" size="30.0" />
          </font>
@@ -23,8 +25,8 @@
             <Font name="Arial Black" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="size" layoutX="295.0" layoutY="157.0" style="-fx-font-size: 20;" text="3" />
-      <Button fx:id="plus" layoutX="355.0" layoutY="149.0" mnemonicParsing="false" onAction="#plusPressed" prefHeight="27.0" prefWidth="55.0" style="-fx-font-size: 20;" text="+" />
-      <Button fx:id="minus" layoutX="188.0" layoutY="149.0" mnemonicParsing="false" onAction="#minuspressed" prefHeight="27.0" prefWidth="55.0" style="-fx-font-size: 20;" text="-" />
+      <Label fx:id="size" layoutX="371.0" layoutY="186.0" style="-fx-font-size: 20;" text="3" />
+      <Button fx:id="plus" layoutX="427.0" layoutY="177.0" mnemonicParsing="false" onAction="#plusPressed" prefHeight="27.0" prefWidth="55.0" style="-fx-font-size: 20;" text="+" />
+      <Button fx:id="minus" layoutX="273.0" layoutY="178.0" mnemonicParsing="false" onAction="#minuspressed" prefHeight="27.0" prefWidth="55.0" style="-fx-font-size: 20;" text="-" />
    </children>
 </AnchorPane>
